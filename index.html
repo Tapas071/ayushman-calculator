@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="icon" type="image/x-icon" href="CAL.png">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Belanosima:wght@600&family=Outfit:wght@400;700&display=swap');
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Outfit:wght@400;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        background-color: #1d3f63;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .calculator-looks {
+        background-color: #1d3f63;
+        height: 500px;
+        width: 400px;
+        /* display: flex; */
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    .top-part {
+        height: 130px;
+        width: 400px;
+        /* background-color: #6f7984; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .display {
+        height: 100px;
+        width: 400px;
+        background-color: rgb(40, 40, 53);
+        /* margin-display: 30px; */
+        /* border-radius: 5%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        /* overflow-y: ; */
+        font-family: 'Agdasima', sans-serif;
+        color: #b8a6a6;
+        border-radius: 10px;
+        box-shadow: 10px 10px black;
+
+
+
+
+    }
+
+    .display-content {
+        height: 60px;
+        width: 250px;
+        /* background-color: grey; */
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: right;
+
+    }
+
+    .calculator-body {
+        height: 350px;
+        width: 400px;
+        background-color: rgb(50, 50, 70);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 40px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px;
+
+    }
+
+    .keyboard {
+        /* background-color: rgb(74, 74, 180); */
+        /* height: 250px; */
+        height: auto;
+        width: 335px;
+        display: -moz-grid-group;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+
+
+        /* align-items:stretch; */
+        /*  */
+    }
+
+    /* .operator{
+        height: 50px;
+        width: 80px;
+        
+    } */
+    button {
+        height: 50px;
+        width: 80px;
+        border-radius: 10px;
+        margin-top: 10px;
+        /* margin-left: 2px; */
+        font-family: 'Belanosima', sans-serif;
+        font-size: x-large;
+
+
+    }
+
+    button:hover {
+        background-color: #ccc7c7;
+        cursor: pointer;
+    }
+
+    .clear {
+        width: 49%;
+        border-radius: 10px;
+        background-color: #57779b;
+    }
+
+    .equal-sign {
+        width: 49%;
+        border-radius: 10px;
+        background-color: rgb(210, 73, 73);
+    }
+
+    .test {
+        height: 30px;
+        width: 30px;
+        background-color: blue;
+
+    }
+
+    .clear:hover {
+        background-color: #344860;
+
+    }
+
+    #btndel:hover {
+        background-color: #344860;
+
+    }
+
+    #btndel {
+        background-color: #57779b;
+
+    }
+</style>
+
+<body>
+    <main>
+        <div class="calculator-looks">
+            <div class="top-part">
+                <div class="display" id="display">
+                    <div class="display-content" id="display-content"></div>
+                </div>
+            </div>
+            <div class="calculator-body">
+
+                <div class="keyboard">
+
+                    <button type="button" value="7" id="btn7">7</button>
+                    <button type="button" value="8" id="btn8">8</button>
+                    <button type="button" value="9" id="btn9">9</button>
+                    <button type="button" class="delete" value="clear" id="btndel">del</button>
+                    <button type="button" value="4" id="btn4">4</button>
+                    <button type="button" value="5" id="btn5">5</button>
+                    <button type="button" value="6" id="btn6">6</button>
+                    <button type="button" class="operator" value="+" id="btn+">+ </button>
+                    <button type="button" value="1" id="btn1">1</button>
+                    <button type="button" value="2" id="btn2">2</button>
+                    <button type="button" value="3" id="btn3">3</button>
+                    <button type="button" class="operator" value="-" id="btn-">-</button>
+                    <button type="button" class="decimal" value="." id="btn-decimal">.</button>
+                    <button type="button" value="0" id="btn0">0</button>
+                    <button type="button" class="operator" value="/" id="btn-divide">&divide;</button>
+                    <button type="button" class="operator" value="*" id="btn-multiply">&times;</button>
+                    <button type="button" class="clear" value="clear" id="btn-ac">clear</button>
+                    <button type="button" class="equal-sign" value="=" id="equal-sign">=</button>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="index.js">
+
+    </script>
+</body>
+
+</html>
